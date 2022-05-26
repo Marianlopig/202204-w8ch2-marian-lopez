@@ -23,7 +23,21 @@ class RobotImpl implements Robot {
     this.battery = 100;
     this.name = this.getRandomName();
   }
-  work() {}
+  work() {
+    switch (this.type) {
+      case "cleaner":
+        console.log("Larala larita, I clean my little house");
+        break;
+      case "developer":
+        console.log(
+          "JavaScript is cool - I develop with JavaScript -> I'm cool"
+        );
+        break;
+      case "waiter":
+        console.log("Do you feel like a mini of fuet?");
+        break;
+    }
+  }
 
   getRandomName(): string {
     return getRandomLetter(3) + getRandomNumber(2);

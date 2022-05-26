@@ -19,7 +19,10 @@ class RobotImpl implements Robot {
     this.type = type;
     this.battery = 100;
   }
-  reset() {}
+  reset() {
+    this.battery = 100;
+    this.name = this.getRandomName();
+  }
   work() {}
 
   getRandomName(): string {

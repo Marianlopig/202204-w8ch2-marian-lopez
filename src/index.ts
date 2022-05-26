@@ -11,3 +11,5 @@ robot.reset();
 console.log(robot.name);
 console.log(robot.battery);
 console.log(robot.type);
+
+robot.work();
